@@ -1,0 +1,9 @@
+<form action="/editar" method="post">
+    <input type="hidden" name="id" value='{{aluno.id}}'>
+    <input type="text" name="nome" placeholder="Nome" value='{{aluno.nome}}' class="form-control">
+    <input type="text" name="nota1" placeholder="Nota 1" value='{{aluno.nota1}}' class="form-control">
+    <input type="text" name="nota2" placeholder="Nota 2" value='{{aluno.nota2}}' class="form-control">
+
+    <input type="submit" value="Editar" class="btn btn-success">
+    <a href='/remover/{{aluno.id}}' class="btn btn-danger">Remover</a>
+</form>

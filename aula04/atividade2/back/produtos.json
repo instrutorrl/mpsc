@@ -1,0 +1,44 @@
+{
+  "produtos": [
+    {
+      "produto": "Notebook Samsung",
+      "imagem": "notebook_samsung.jpeg",
+      "id": 1
+    },
+    {
+      "produto": "Monitor LG",
+      "imagem": "monitor_lg.jpeg",
+      "id": 2
+    },
+    {
+      "produto": "Mouse Gamer",
+      "imagem": "mouse_gamer.jpeg",
+      "id": 3
+    },
+    {
+      "produto": "Teclado Chroma",
+      "imagem": "teclado.jpg",
+      "id": 4
+    },
+    {
+      "produto": "iMac",
+      "imagem": "imac.jpeg",
+      "id": 5
+    },
+    {
+      "produto": "Notebook Dell",
+      "imagem": "dell_inspiron.jpeg",
+      "id": 6
+    },
+    {
+      "produto": "Smartphone Galaxy S21",
+      "imagem": "s21.jpeg",
+      "id": 7
+    },
+    {
+      "produto": "iPad",
+      "imagem": "ipad.jpeg",
+      "id": 8
+    }
+  ]
+}

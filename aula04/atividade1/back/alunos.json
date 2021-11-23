@@ -1,0 +1,11 @@
+{
+  "alunos": [
+    {
+      "nome": "Lucas",
+      "nota1": 10,
+      "nota2": 8,
+      "media": "9.0",
+      "id": 2
+    }
+  ]
+}

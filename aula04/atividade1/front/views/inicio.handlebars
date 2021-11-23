@@ -1,0 +1,18 @@
+<form action="/cadastrar" method="post">
+    <input type="text" name="nome" placeholder="Nome" class="form-control">
+    <input type="text" name="nota1" placeholder="Nota 1" class="form-control">
+    <input type="text" name="nota2" placeholder="Nota 2" class="form-control">
+    <input type="submit" value="Enviar" class="btn btn-primary">
+</form>
+
+<table class="table table-striped">
+    {{#each vetor}}
+        <tr>
+            <td>{{nome}}</td>
+            <td>{{nota1}}</td>
+            <td>{{nota2}}</td>
+            <td>{{media}}</td>
+            <td><a href='/selecionar/{{id}}' class="btn btn-info">Selecionar</a></td>
+        </tr>
+    {{/each}}
+</table>
