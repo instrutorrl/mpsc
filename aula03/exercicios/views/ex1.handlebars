@@ -1,0 +1,10 @@
+{{#if media}}
+    <h1 class="tituloEx1">{{situacao}} com média {{media}}</h1>
+{{/if}}
+
+<form action="/ex1" method="post" class="ex1">
+    <input type="text" placeholder="Informe a primeira nota" class="form-control" name="nota1">
+    <input type="text" placeholder="Informe a segunda nota"  class="form-control" name="nota2">
+    <input type="text" placeholder="Informe a terceira nota" class="form-control" name="nota3">
+    <input type="submit" class="btn btn-success" value="Calcular">
+</form>

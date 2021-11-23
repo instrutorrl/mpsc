@@ -1,0 +1,14 @@
+.ex1{
+    width: 500px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.ex1 input{
+    margin-bottom: 10px;
+}
+
+.tituloEx1{
+    margin: 20px;
+    text-align: center;
+}

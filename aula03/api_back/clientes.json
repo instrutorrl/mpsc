@@ -1,0 +1,14 @@
+{
+  "clientes": [
+    {
+      "nome": "Brenda",
+      "idade": 23,
+      "id": 1
+    },
+    {
+      "nome": "Ângela",
+      "idade": 34,
+      "id": 3
+    }
+  ]
+}
