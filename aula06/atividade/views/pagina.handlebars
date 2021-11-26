@@ -1,0 +1,19 @@
+{{mensagem}}
+
+<form action='/cadastrar' method='post'>
+    <input type='text' name='nome' placeholder="Nome">
+    <input type='text' name='idade' placeholder="Idade">
+    <input type='submit' value='Cadastrar'>
+</form>
+
+<table>
+
+    {{#each clientes}}
+    <tr>
+        <td>{{nome}}</td>
+        <td>{{idade}}</td>
+        <td><a href='/remover/{{codigo}}'>Remover</a></td>
+    </tr>
+    {{/each}}
+
+</table>
