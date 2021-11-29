@@ -1,5 +1,7 @@
 // Express
 var express = require('express');
+
+// App
 var app = express();
 
 // Selecionar arquivos estáticos (CSS, JS, Imagens...)
