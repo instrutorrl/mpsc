@@ -15,7 +15,7 @@ function mensagem(nome, idade){
 }
 
 // Exportar
-module.exports = {mensagem}
+module.exports = { mensagem }
 
 /*
     Operadores relacionais
