@@ -18,6 +18,7 @@ app.use(express.urlencoded({extended:true}));
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
+// Módulo node-fetch
 var nodefetch = require('node-fetch');
 
 // Rotas
