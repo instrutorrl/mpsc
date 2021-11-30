@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    
+    <script>
+
+        // Função par ou ímpar
+        function parImpar(numero){
+            
+            let promessa = new Promise((acaoOk, acaoFalha) => {
+
+                if(isNaN(numero)){
+                    acaoFalha(new Error('Não é um número'))
+                }else{
+                    if(numero % 2 == 0){
+                        acaoOk('Par');
+                    }else{
+                        acaoOk('Ímpar');
+                    }
+                }
+
+            });
+
+            return promessa;
+        }
+
+        // Função para verificar se é positivo ou negativo
+        function positivoNegativo(numero){
+
+            let promessa = new Promise(function(ok, falha){
+
+                if(isNaN(numero)){
+                    falha(new Error('Favor informar um número'));
+                }else{
+                    ok(numero < 0 ? 'Negativo' : 'Positivo');
+                }
+
+            });
+
+            return promessa;
+
+        }
+
+        // parImpar(5)
+        // .then(retorno => console.log(retorno))
+        // .catch(erro => console.log(erro));
+
+        // Promise.all([parImpar(5), positivoNegativo(5)])
+        // .then(retorno => console.log(retorno))
+        // .catch(erro => console.log(erro));
+
+        fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(retorno => retorno.json())
+        .then(dados => console.log(dados))
+        .catch(erro => console.log('Falha ' + erro));
+
+    </script>
+
+</body>
+</html>

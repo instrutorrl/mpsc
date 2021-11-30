@@ -1,0 +1,28 @@
+<h1>{{texto}}</h1>
+<button (click)="alterarTexto()">Clique aqui</button>
+<hr>
+
+<div *ngIf="visivel" style="width:300px; height:200px; background-color: red;"></div>
+<button (click)="alterarVisivel()">Clique aqui</button>
+<hr>
+
+<ol>
+  <li *ngFor="let n of nomes">{{n}}</li>
+</ol>
+<hr>
+
+<table border="1">
+  <tr *ngFor="let obj of contatos; let indice = index">
+    <td>{{indice + 1}}</td>
+    <td>{{obj.nome}}</td>
+    <td>{{obj.cidade}}</td>
+  </tr>
+</table>
+<hr>
+
+<div [ngClass]="classe" style="width: 200px; height: 200px;"></div>
+<button (click)="alterarClasse()">Alterar fundo</button>
+<hr>
+
+<h1>{{campoTexto.value}}</h1>
+<input type="text" placeholder="Digite algo..." [formControl]="campoTexto">
