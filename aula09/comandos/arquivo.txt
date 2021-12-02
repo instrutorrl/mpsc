@@ -1,0 +1,7 @@
+// Criar componente
+ng g c componente
+ng geranete component componente
+
+// Criar serivço
+ng g s servico
+ng generate service servico
