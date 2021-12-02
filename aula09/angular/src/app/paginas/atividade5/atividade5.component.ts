@@ -17,7 +17,8 @@ export class Atividade5Component implements OnInit {
   vetor:any = [];
 
   executarListar(){
-    this.requisicao.listar().subscribe(retorno => this.vetor = retorno); 
+    this.requisicao.listar()
+    .subscribe(retorno => this.vetor = retorno); 
   }
 
 }
