@@ -1,0 +1,30 @@
+<form [formGroup]="agruparForm">
+    
+    <div [ngClass]="estiloAlerta">{{textoAlerta}}</div>
+    
+    <input type="text"   formControlName="nome"   placeholder="Nome"   class="form-control">
+    <input type="text"   formControlName="cidade" placeholder="Cidade" class="form-control">
+    <input type="number" formControlName="idade"  placeholder="Idade"  class="form-control">
+
+    <button class="btn btn-primary" (click)="cadastrar()">Enviar</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cidade</th>
+            <th>Idade</th>
+            <th>Remover</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let v of vetor; let i = index">
+            <td>{{v.nome}}</td>
+            <td>{{v.cidade}}</td>
+            <td>{{v.idade}}</td>
+            <td><button class="btn btn-danger" (click)="remover(i)">Remover</button></td>
+        </tr>
+    </tbody>
+</table>
