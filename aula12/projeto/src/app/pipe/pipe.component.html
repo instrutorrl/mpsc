@@ -1,0 +1,10 @@
+<ol>
+    <li *ngFor="let n of nomes">{{n | uppercase}}</li>
+</ol>
+
+<hr>
+
+<ul>
+    <!-- <li *ngFor="let p of precos">{{p | currency:'BRL'}}</li> -->
+    <li *ngFor="let p of precos">{{p | moeda}}</li>
+</ul>

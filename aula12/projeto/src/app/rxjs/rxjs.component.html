@@ -1,0 +1,23 @@
+<!-- <ul>
+    <li *ngFor="let v of valores">{{v}}</li>
+</ul>
+
+<hr>
+
+<input type="text" [formControl]="campo" (keyup)="filtrarNomes()" placeholder="Pesquisar">
+<ul>
+    <li *ngFor="let n of filtragemNomes">{{n}}</li>
+</ul> -->
+
+<img src="https://c.tenor.com/8KWBGNcD-zAAAAAC/loader.gif" *ngIf="exibir">
+
+<h1 *ngIf="!exibir">{{mensagem}}</h1>
+
+<table border="1" *ngIf="!exibir">
+    <tr *ngFor="let vc of vetorComentarios">
+        <td>{{vc.id}}</td>
+        <td>{{vc.postId}}</td>
+        <td>{{vc.name}}</td>
+        <td>{{vc.email}}</td>
+    </tr>
+</table>
