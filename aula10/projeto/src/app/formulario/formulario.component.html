@@ -1,0 +1,5 @@
+<form [formGroup]="grupo">
+    <input type="text"   formControlName="nome"  placeholder="Informe o nome">
+    <input type="number" formControlName="idade" placeholder="Informe a idade">
+    <input type="button" (click)="cadastrar()"   value="Cadastrar">
+</form>
