@@ -1,0 +1,3 @@
+ng s -> Servidor
+
+ng g c nomeComponente -> Gerar componente
