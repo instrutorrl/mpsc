@@ -1,0 +1,49 @@
+<main class="container">
+    
+    <!-- Formulário -->
+    <section class="row">
+        <div class="col-md-8 offset-md-2">
+            <form [formGroup]="grupo">
+                <input type="text" formControlName="titulo" placeholder="Título" class="form-control">
+                
+                <select class="form-control" formControlName="segmento">
+                    <option>Segmento</option>
+                    <option>Lazer</option>
+                    <option>Notícias</option>
+                    <option>Saúde</option>
+                    <option>Tecnologia</option>
+                </select>
+                
+                <textarea formControlName="texto" placeholder="Texto" class="form-control"></textarea>
+                
+                <input type="button" (click)="cadastrarPostagem()" value="Enviar" class="btn btn-primary">
+            </form>
+        </div>
+    </section>
+
+    <!-- Tabela -->
+    <section class="row">
+        <div class="col-12">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Título</th>
+                        <th>Segmento</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let p of postagens; let i = index">
+                        <td>{{i+1}}</td>
+                        <td>{{p.titulo}}</td>
+                        <td>{{p.segmento}}</td>
+                        <td><button class="btn btn-danger" (click)="removerPostagem(i)">Remover</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
